@@ -6,11 +6,15 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/delivery', function (req, res, next) {
-    res.send('respond with a resource');
+    const params = Object.assign(request.query, request.body);
+    console.log(params);
+    response.status(204).send();
 });
 
 router.get('/inbound', function (req, res, next) {
-    res.send('respond with a resource');
+    const params = Object.assign(request.query, request.body);
+    console.log(params);
+    response.status(204).send();
 });
 
 module.exports = router;
