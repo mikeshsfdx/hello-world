@@ -6,13 +6,13 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/delivery', function (req, res, next) {
-    const params = Object.assign(request.query, request.body);
+    const params = Object.assign(req.query, req.body);
     console.log(params);
     response.status(204).send();
 });
 
 router.get('/inbound', function (req, res, next) {
-    const params = Object.assign(request.query, request.body);
+    const params = Object.assign(req.query, req.body);
     console.log(params);
     response.status(204).send();
 });
